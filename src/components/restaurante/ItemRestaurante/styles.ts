@@ -61,8 +61,21 @@ export const PopupContent = styled.div`
        object-fit: cover;
     }
 
-    div{
+    & > div{
         margin-left:24px;
+
+        .tituloContainer{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img{
+                width:15px;
+                height:15px;
+                margin-bottom:16px;
+                cursor:pointer;
+            }
+        }
 
         h2{
             font-size:18px;
