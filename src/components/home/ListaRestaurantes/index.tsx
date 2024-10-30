@@ -14,7 +14,7 @@ export const ListaProdutos = ({ restaurantes }: ListaRestaurantesProps) => (
                 <Restaurante
                     key={restaurante.id}
                     id={restaurante.id}
-                    destaque={restaurante.destaque}
+                    destacado={restaurante.destacado}
                     titulo={restaurante.titulo} 
                     descricao={restaurante.descricao}
                     avaliacao={restaurante.avaliacao}

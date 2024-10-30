@@ -13,7 +13,7 @@ export class RestauranteClass {
     avaliacao:number
     descricao:string
     imagem: string
-    destaque: boolean
+    destacado: boolean
     cardapio?: ItemCardapioType[]
     tipo:string
     capa: string
@@ -24,7 +24,7 @@ export class RestauranteClass {
         avaliacao:number,
         descricao:string,
         imagem: string,
-        destaque:boolean,
+        destacado:boolean,
         cardapio:ItemCardapioType[],
         tipo:string,
         capa:string
@@ -35,7 +35,7 @@ export class RestauranteClass {
         this.avaliacao = avaliacao
         this.descricao = descricao
         this.imagem = imagem
-        this.destaque = destaque
+        this.destacado = destacado
         this.cardapio = cardapio
         this.tipo = tipo
         this.capa = capa

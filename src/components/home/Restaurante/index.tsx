@@ -11,7 +11,7 @@ export const Restaurante = (restaurante: RestauranteClass) => {
     return(
         <stl.Restaurante>
             <stl.TagContainer>
-                {restaurante.destaque && 
+                {restaurante.destacado && 
                 <stl.Tag>Destaque da semana</stl.Tag>    
                 }
                 <stl.Tag>{restaurante.tipo}</stl.Tag>
