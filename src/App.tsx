@@ -10,7 +10,7 @@ const rotas = createBrowserRouter([
     element: <Home/>
   },
   {
-    path:'/restaurante/:tipo',
+    path:'/restaurante/:id',
     element: <Restaurante/>
   }
 ])

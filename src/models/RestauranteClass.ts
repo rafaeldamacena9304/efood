@@ -1,41 +1,42 @@
 export interface ItemCardapioType {
+    id: number,
     nome: string,
     preco: number,
-    descricao: string
-    imagem: string
+    descricao: string,
+    foto: string
 }
 
 export class RestauranteClass {
     id: number
-    nome: string
+    titulo: string
     avaliacao:number
     descricao:string
-    infos: string[]
     imagem: string
+    destaque: boolean
     cardapio?: ItemCardapioType[]
     tipo:string
-    backgroundImage: string
+    capa: string
 
     constructor(
         id:number,
-        nome:string,
+        titulo:string,
         avaliacao:number,
         descricao:string,
-        infos: string[],
         imagem: string,
+        destaque:boolean,
         cardapio:ItemCardapioType[],
         tipo:string,
-        backgroundImage:string
+        capa:string
     )
     {
         this.id = id,
-        this.nome = nome,
+        this.titulo = titulo,
         this.avaliacao = avaliacao
         this.descricao = descricao
-        this.infos = infos
         this.imagem = imagem
+        this.destaque = destaque
         this.cardapio = cardapio
         this.tipo = tipo
-        this.backgroundImage = backgroundImage
+        this.capa = capa
     }
 }

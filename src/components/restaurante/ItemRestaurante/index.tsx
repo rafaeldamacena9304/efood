@@ -6,7 +6,7 @@ export const ItemCardapio = (props: ItemCardapioType) => {
     
     return(
         <stl.ItemCardapioContainer>
-        <img src={props.imagem}/>
+        <img src={props.foto}/>
         <stl.Titulo>{props.nome}</stl.Titulo>
         <stl.Descricao>{props.descricao}</stl.Descricao>
         <stl.Button to="/">Adicionar ao carrinho</stl.Button>

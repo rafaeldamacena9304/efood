@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 export const Restaurante = styled.div`
     border:1px solid var(--rosa);
     position:relative; 
+    & > img  {
+        width:100%;
+        height:310px;
+        object-fit: cover;
+    }
 `
 export const NomeContainer = styled.div`
     font-size:18px;

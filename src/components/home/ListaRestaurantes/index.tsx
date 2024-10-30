@@ -14,13 +14,13 @@ export const ListaProdutos = ({ restaurantes }: ListaRestaurantesProps) => (
                 <Restaurante
                     key={restaurante.id}
                     id={restaurante.id}
-                    infos={restaurante.infos} 
-                    nome={restaurante.nome} 
+                    destaque={restaurante.destaque}
+                    titulo={restaurante.titulo} 
                     descricao={restaurante.descricao}
                     avaliacao={restaurante.avaliacao}
                     imagem={restaurante.imagem}
                     tipo={restaurante.tipo}
-                    backgroundImage={restaurante.backgroundImage}
+                    capa={restaurante.capa}
                 />
             ))}
         </stl.ListaRestaurantes>

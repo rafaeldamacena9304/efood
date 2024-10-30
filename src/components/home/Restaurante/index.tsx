@@ -2,22 +2,27 @@ import { RestauranteClass } from "../../../models/RestauranteClass"
 import * as stl from './styles'
 import star from '../../../assets/images/star.png'
 
-export const Restaurante = (props: RestauranteClass) => {
+interface RestauranteProps {
+    restaurante: RestauranteClass
+}
+
+export const Restaurante = (restaurante: RestauranteClass) => {
 
     return(
         <stl.Restaurante>
             <stl.TagContainer>
-                {props.infos.map(info => (
-                    <stl.Tag key={info}>{info}</stl.Tag>
-                ))}
+                {restaurante.destaque && 
+                <stl.Tag>Destaque da semana</stl.Tag>    
+                }
+                <stl.Tag>{restaurante.tipo}</stl.Tag>
             </stl.TagContainer>
-            <img src={props.imagem} alt=""/>
+            <img src={restaurante.capa} alt=""/>
             <stl.NomeContainer>
-                <span>{props.nome}</span>
-                <stl.AvaliacaoContainer>{props.avaliacao}<img src={star} alt=""/></stl.AvaliacaoContainer>
+                <span>{restaurante.titulo}</span>
+                <stl.AvaliacaoContainer>{restaurante.avaliacao}<img src={star} alt=""/></stl.AvaliacaoContainer>
             </stl.NomeContainer>
-            <stl.Descricao>{props.descricao}</stl.Descricao>
-            <stl.Button to={`/restaurante/${props.tipo}`}>Saiba mais</stl.Button>
+            <stl.Descricao>{restaurante.descricao}</stl.Descricao>
+            <stl.Button to={`/restaurante/${restaurante.id}`}>Saiba mais</stl.Button>
         </stl.Restaurante>
     )
 }
