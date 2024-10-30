@@ -4,6 +4,7 @@ export interface ItemCardapioType {
     preco: number,
     descricao: string,
     foto: string
+    porcao:string
 }
 
 export class RestauranteClass {

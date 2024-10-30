@@ -10,7 +10,7 @@ interface CardapioProps{
 
 
 export const Cardapio = ({cardapio} : CardapioProps) => {
-    
+
     
 
     return (
@@ -23,6 +23,7 @@ export const Cardapio = ({cardapio} : CardapioProps) => {
                             descricao={cardapioItem.descricao}
                             preco={cardapioItem.preco}
                             foto={cardapioItem.foto}
+                            porcao={cardapioItem.porcao}
                             />
                     </li>
                 ))}
