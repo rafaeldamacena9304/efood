@@ -16,7 +16,6 @@ export const Overlay = styled.div`
     width:100%;
     height:100%;
     background-color:rgba(0,0,0,0.7);
-
 `
 export const Cart = styled.aside`
     padding:32px 8px;
@@ -24,6 +23,8 @@ export const Cart = styled.aside`
     z-index:3;
     width:100%;
     max-width:360px;
+    overflow-y:scroll;
+
 `
 export const CartItem = styled.div`
     display:flex;
@@ -70,6 +71,8 @@ export const PrecoTotal = styled.div`
     justify-content: space-between;
     width:100%;
     color:white;
+
+    
     span{
         display:inline-block;
     }
