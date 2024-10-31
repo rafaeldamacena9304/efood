@@ -3,6 +3,7 @@ import { Home } from './pages/Home';
 
 import { GlobalStyle } from './globalStyle';
 import { Restaurante } from './pages/Restaurante';
+import { Cart } from './components/carrinho/Cart';
 
 const rotas = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
+    <Cart />
     <RouterProvider router={rotas}/>
     </>
   );

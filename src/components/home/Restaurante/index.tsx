@@ -2,9 +2,6 @@ import { RestauranteClass } from "../../../models/RestauranteClass"
 import * as stl from './styles'
 import star from '../../../assets/images/star.png'
 
-interface RestauranteProps {
-    restaurante: RestauranteClass
-}
 
 export const Restaurante = (restaurante: RestauranteClass) => {
 
