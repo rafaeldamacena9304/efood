@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../../../redux/store"
-import { close } from '../../../redux/Cart/cartReducer'
+import { close, remove } from '../../../redux/Cart/cartReducer'
 
 import * as stl from "./styles"
+
+import lixeira from '../../../assets/images/lixeira.png'
 
 
 export const Cart = () => {
@@ -13,6 +15,10 @@ export const Cart = () => {
 
     const fecharCarrinho = () => {
         dispatch(close())
+    }
+
+    const removerItem = (id: number) => {
+        dispatch(remove(id))
     }
     
     const converterReal = (preco: number) => {
@@ -40,6 +46,7 @@ export const Cart = () => {
                                     <h3>{item.nome}</h3>
                                     <p>{converterReal(item.preco)}</p>
                                 </div>
+                                <img onClick={() => removerItem(item.id)} className="excluir" src={lixeira} alt="" />
                             </stl.CartItem>
                         ))}
                        

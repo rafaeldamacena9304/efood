@@ -32,6 +32,7 @@ export const CartItem = styled.div`
     background-color:var(--rosaClaro);
     padding:8px 12px;
     margin-bottom:16px;
+    position:relative;
 
     img{
         width:80px;
@@ -48,6 +49,17 @@ export const CartItem = styled.div`
     p{
         font-weight:normal;
         color:var(--rosa)
+    }
+    .excluir{
+        width:16px;
+        height:16px;
+        position:absolute;
+        bottom:8px;
+        right:8px;
+
+        &:hover{
+            cursor:pointer;
+        }
     }
 `
 export const PrecoTotal = styled.div`
