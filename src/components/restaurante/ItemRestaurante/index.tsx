@@ -1,9 +1,23 @@
+import { RootState } from "../../../redux/store"
+import { useDispatch, useSelector } from "react-redux"
+import { add, open } from "../../../redux/Cart/cartReducer"
 import { useState } from "react"
+
 import { ItemCardapioType } from "../../../models/RestauranteClass"
+
 import * as stl from './styles'
 import close from '../../../assets/images/close.png'
 
 export const ItemCardapio = (props: ItemCardapioType) => {
+
+    const dispatch = useDispatch()
+
+    const { items, isOpen } = useSelector((state: RootState) => state.cart)
+
+    const adicionarAoCarrinho = () => {
+        dispatch(add(props))
+        dispatch(open())
+    }
 
     const [isVisible, setIsVisible] = useState(false)
 
@@ -27,7 +41,7 @@ export const ItemCardapio = (props: ItemCardapioType) => {
                         </div>
                         <p>{props.descricao}</p>
                         <p>{`Serve de: ${props.porcao}`}</p>
-                        <stl.Button>{`Adicionar ao carrinho - ${converterReal(props.preco)}`}</stl.Button>
+                        <stl.Button onClick={adicionarAoCarrinho}>{`Adicionar ao carrinho - ${converterReal(props.preco)}`}</stl.Button>
                     </div>
                 </stl.PopupContent>
 
