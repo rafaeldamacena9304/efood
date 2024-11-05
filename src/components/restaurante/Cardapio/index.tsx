@@ -8,9 +8,7 @@ interface CardapioProps{
 }
 
 
-
 export const Cardapio = ({cardapio} : CardapioProps) => {
-
     
 
     return (

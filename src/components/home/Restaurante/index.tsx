@@ -1,5 +1,7 @@
 import { RestauranteClass } from "../../../models/RestauranteClass"
+
 import * as stl from './styles'
+
 import star from '../../../assets/images/star.png'
 
 

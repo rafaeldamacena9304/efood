@@ -1,5 +1,7 @@
-import { RestauranteClass } from "../../../models/RestauranteClass"
 import { Restaurante } from "../Restaurante"
+
+import { RestauranteClass } from "../../../models/RestauranteClass"
+
 import * as stl from './styles'
 
 interface ListaRestaurantesProps{

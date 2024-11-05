@@ -1,9 +1,9 @@
+import * as stl from './styles'
+
 import logo from '../../../assets/images/logo.png'
 import instagram from '../../../assets/images/instagram.png'
 import facebook from '../../../assets/images/facebook.png'
 import twitter from '../../../assets/images/twitter.png'
-
-import * as stl from './styles'
 
 export const Footer = () => {
 
@@ -12,13 +12,13 @@ export const Footer = () => {
             <div className="container">
                 <img src={logo} alt=""/>
                 <stl.SocialLinks>
-                    <a href="#">
+                    <a href="/">
                         <img src={instagram} alt="" />
                     </a>
-                    <a href="#">
+                    <a href="/">
                         <img src={facebook} alt="" />
                     </a>
-                    <a href="#">
+                    <a href="/">
                         <img src={twitter} alt="" />
                     </a>
                 </stl.SocialLinks>

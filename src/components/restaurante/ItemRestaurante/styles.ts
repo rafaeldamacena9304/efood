@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -28,11 +27,15 @@ export const Button = styled.button`
     color:var(--rosa);
     width:100%;
     display:flex;
+    font-weight:bold;
     align-items:center;
     justify-content: center;
     padding:4px 0px;
     text-decoration:none;
     border:none;
+    &:hover{
+        cursor:pointer;
+    }
 `   
 export const PopupContainer = styled.div<{$isVisible: boolean}>`
     width:100%;

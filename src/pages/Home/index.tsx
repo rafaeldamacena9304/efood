@@ -1,27 +1,32 @@
-import { useEffect, useState } from 'react'
+
 import { Footer } from '../../components/geral/Footer'
+import { Spinner } from '../../components/geral/Spinner'
 import { Hero } from '../../components/home/Hero'
 import { ListaProdutos } from '../../components/home/ListaRestaurantes'
-import { RestauranteClass } from '../../models/RestauranteClass'
+import { useGetListaRestaurantesQuery } from '../../services/api'
 
 
 
 
 export const Home = () => {
     
-    const [restaurantes, setRestaurantes] = useState<RestauranteClass[]>([])
+    const { data: restaurantes = [], isLoading } = useGetListaRestaurantesQuery();
 
-    useEffect( () => {
-        fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
-        .then(resposta => resposta.json())
-        .then(resposta => setRestaurantes(resposta))
-    }, [] )
+
 
     return(
         <>
-        <Hero/>
-        <ListaProdutos restaurantes={restaurantes} />
-        <Footer/>
+        {isLoading ? 
+            (<Spinner />)
+            :
+        (
+            <>
+            <Hero/>
+            <ListaProdutos restaurantes={restaurantes} />
+            <Footer/>
+            </>
+        )
+        }
         </>
     )
 }
