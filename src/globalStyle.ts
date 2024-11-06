@@ -33,6 +33,6 @@ export const GlobalStyle = createGlobalStyle`
     width:100%;
 }
 body{
-    background-color:#FEF
+    background-color:var(--branco);
 }
 `
