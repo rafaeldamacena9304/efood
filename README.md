@@ -65,7 +65,7 @@ Este aplicativo foi criado como parte de meu portfólio para demonstrar:
 
 Gostou do projeto? Entre em contato comigo!  
 📧 E-mail: [rafaeldamacena9304@gmail.com](mailto:rafaeldamacena9304@gmail.com)  
-🌐 LinkedIn: [Rafael Damacena](https://www.linkedin.com/in/rafael-damacena-4aa03024a/)
+🌐 LinkedIn: [Rafael Damacena](https://www.linkedin.com/in/rafaeldamacena9304/)
 
 ---
 
