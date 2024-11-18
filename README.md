@@ -35,13 +35,21 @@ Este aplicativo foi criado como parte de meu portfólio para demonstrar:
 ## 🖼️ Preview do Projeto
 
 ### Lista de Restaurantes
-![Imagem Demonstrativa](./src/assets/screenshots/restaurantes.png)
+![Imagem Demonstrativa](./src/assets/screenshots/1.png)
 
 ### Detalhes do Restaurante  
-![Imagem Demonstrativa](./src/assets/screenshots/detalhes.png)
+![Imagem Demonstrativa](./src/assets/screenshots/2.png)
+
+![Imagem Demonstrativa](./src/assets/screenshots/3.png)
 
 ### Tela de Pagamento
-![Imagem Demonstrativa](./src/assets/screenshots/pagamento.png)
+
+
+![Imagem Demonstrativa](./src/assets/screenshots/4.png)
+
+![Imagem Demonstrativa](./src/assets/screenshots/5.png)
+
+![Imagem Demonstrativa](./src/assets/screenshots/6.png)
 
 ---
 
