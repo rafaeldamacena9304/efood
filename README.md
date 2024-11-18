@@ -37,19 +37,19 @@ Este aplicativo foi criado como parte de meu portfólio para demonstrar:
 ### Lista de Restaurantes
 ![Imagem Demonstrativa](./src/assets/screenshots/1.png)
 
-### Detalhes do Restaurante  
 ![Imagem Demonstrativa](./src/assets/screenshots/2.png)
 
+### Detalhes do Restaurante  
 ![Imagem Demonstrativa](./src/assets/screenshots/3.png)
-
-### Tela de Pagamento
-
 
 ![Imagem Demonstrativa](./src/assets/screenshots/4.png)
 
+### Tela de Pagamento
 ![Imagem Demonstrativa](./src/assets/screenshots/5.png)
 
 ![Imagem Demonstrativa](./src/assets/screenshots/6.png)
+
+![Imagem Demonstrativa](./src/assets/screenshots/7.png)
 
 ---
 
